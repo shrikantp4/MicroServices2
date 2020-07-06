@@ -1,0 +1,15 @@
+package com.capgemini.ConfigConsumer;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ConfigConsumerApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ConfigConsumerApplication.class, args);
+	}
+	
+	/* URL is http://localhost:8081/rate */
+
+}
