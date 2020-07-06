@@ -1,0 +1,85 @@
+OAuth :
+Authentication
+Authorization
+OAuth(Latest version)
+Most widely used
+
+Authorization between services
+
+
+OAuth flows work
+
+1)Resource(protected resource)
+ex.
+Photo printing service
+Google Drive
+   photos on Google drive is protected resource
+If a Photo printing service want to access photos, needs credentials
+
+
+2)Resource Owner
+  A person who has access to the resource.
+  An entity capable of granting access to a protected resource.
+  user.
+
+3)Resource Server
+  The server hosting the protected resources
+
+4)Client
+An application making protected resource requests on behalf of the resource owner and with its authorization.
+
+
+Who has the burden of security?
+Resource holder
+
+5)Authorization Server?
+The server issuing access tokens to the client
+
+OAuth Flow 1
+Authorization Code Flow
+
+Securing your microservices :
+-----------------------------
+Spring(Cloud)Security
+Service authorization powered by OAuth 2.0.
+
+What is OAuth2.0?
+Protocol for converying authoirzation
+Provides authorization flow for various clients
+Obtain limited access to user accounts
+separates idea of user and client - client is authorized to access certain data
+Access token carries more than identity
+Not an authentication scheme
+
+Actors in an OAuth2.0 Scenario :
+Resource owner - Entity that grants access to a resource. Usually you.
+
+Resource Server - Server hosting the protected resource/web service/microservice.
+
+Client - App making protected resource requests on behalf of resource owner.
+server may act like a client!!
+
+AuthZ Server - Server issuing access tokens to clients.
+
+Access Token - its nothing but a string
+               through header u pass
+Refresh Token - in case access token is expired
+Scope e.g. read
+Client ID/Secret
+OpenID Connect - Authentication protocol based on OAuth2
+
+JWT - Json Web Token
+
+https://www.javainuse.com/spring/spring-cloud-netflix-zuul-tutorial
+
+
+Roy Ghosh, Paromita <paromita.ghosh@capgemini.com>
+
+
+
+
+
+
+
+
+
